@@ -31,9 +31,9 @@ class PickBeansGame():
         self.left_bean_num = self.total_bean_num
 
     def compute_state(self, step_index):
-        step_index_onehot = [0] * self.player_num
-        step_index_onehot[step_index] = 1
-        return step_index_onehot + [self.left_bean_num]
+        step_index_onehot = [0.] * self.player_num
+        step_index_onehot[step_index] = 1.
+        return step_index_onehot + [self.left_bean_num / float(self.total_bean_num)]
 
     def reset(self):
         """

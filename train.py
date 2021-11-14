@@ -60,6 +60,8 @@ if __name__ == '__main__':
         parser.add_argument('--gamma', type=float, default=0.99, help='ed factor')
         parser.add_argument('--gae', type=float, default=0.97, help='gae')
         parser.add_argument('--picker_tensorboard_inverval', type=int, default=5000, help="log picker's action,  teacher's reward and loss")
+        parser.add_argument('--picker_test_interval', type=int, default=1000, help="test frequency of picker")
+        parser.add_argument('--picker_test_count', type=int, default=10, help="number of test episode for each test")
         args = parser.parse_args()
         return args
 
