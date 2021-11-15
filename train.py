@@ -53,7 +53,7 @@ if __name__ == '__main__':
         parser.add_argument('--log_path', type=str, default='./zlog_ppo/logdir/', help='Path to save test result.')
         parser.add_argument('--picker_buff_size', type=int, default=128, help="the pooling buffer size of picker")
         parser.add_argument('--seed', type=int, default=7417, help='random seed')
-        parser.add_argument('--max_steps', type=int, default=2e6, help='Number of total steps')
+        parser.add_argument('--max_steps', type=int, default=3e7, help='Number of total steps')
         parser.add_argument('--ppo_epoch', type=int, default=10, help='Number of training times for each minibatch in ppo')
         parser.add_argument('--lr', type=float, default=1e-4, help='Learning rate')
         parser.add_argument('--entropy_beta', type=float, default=0.1, help='Entropy beta in policy loss')
